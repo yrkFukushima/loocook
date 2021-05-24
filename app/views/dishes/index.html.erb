@@ -1,4 +1,7 @@
-<h1>Hello World</h1>
+<h1>Loocook</h1>
+<% if user_signed_in?%>こんにちは
+<%= link_to "#{current_user.nickname}さん",dish_path(current_user.id), class: "post-contents" %>
+<%end%>
 
 <%= link_to '新規登録', new_user_registration_path, class: "sign-up" %>
 
@@ -7,3 +10,4 @@
 <%= link_to 'ログイン', new_user_session_path, class: "login" %>
 
 <%= link_to '投稿する', new_dish_path, class: "post-contents" %>
+
