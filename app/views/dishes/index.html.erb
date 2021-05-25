@@ -1,6 +1,6 @@
 <h1>Loocook</h1>
 <% if user_signed_in?%>こんにちは
-<%= link_to "#{current_user.nickname}さん",dish_path(current_user.id), class: "post-contents" %>
+<%= link_to "#{current_user.nickname}さん", user_path(current_user.id), class: "post-contents" %>
 <%end%>
 
 <%= link_to '新規登録', new_user_registration_path, class: "sign-up" %>

@@ -16,6 +16,7 @@ class DishesController < ApplicationController
   end  
 
   def show
+    @dishes= Dish.all
   end  
 
   private
