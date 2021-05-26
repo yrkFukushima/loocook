@@ -1,6 +1,7 @@
 class DishesController < ApplicationController
 
   def index
+    @dishes= Dish.all
   end
 
   def new
@@ -16,6 +17,7 @@ class DishesController < ApplicationController
   end  
 
   def show
+    @dishes= Dish.all
   end  
 
   private
