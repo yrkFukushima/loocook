@@ -1,13 +1,62 @@
-<h1>Loocook</h1>
-<% if user_signed_in?%>こんにちは
-<%= link_to "#{current_user.nickname}さん", user_path(current_user.id), class: "post-contents" %>
-<%end%>
+<head>
+<script src="https://kit.fontawesome.com/f2014794bc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <div class="head-contents">
+      <div class="left-content">
+        <h1 class="header-logo">Loocook</h1>
+      </div>
+      <div class="right-content">
+        <li class="header-btn">
+        <% if user_signed_in?%>
+          <ul class="logout-btn"><%=link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout"%></ul>
+        <%else%>
+          <ul class="signup-btn"><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></ul>
+          <ul class="login-btn"><%= link_to 'ログイン', new_user_session_path, class: "login" %></ul>
+        <%end%>
+        </li>
+        </div>
+      </div>
+  </header>
 
-<%= link_to '新規登録', new_user_registration_path, class: "sign-up" %>
 
-<%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout"%>
+<div class= "contents-body">
+  <div class="introduction">
+    <h1 class="introduction-title">about</h1>
+    <div class="introduction-contents">
+      「今日何食べよう？」
+      「いつも同じ物を作ってしまう...」<br>
+      Loocookはそんな悩みを解決します。<br>
+      特別な日のごはんではなくいつものごはんをのぞいてみませんか？
+    </div>
+  </div>
 
-<%= link_to 'ログイン', new_user_session_path, class: "login" %>
 
-<%= link_to '投稿する', new_dish_path, class: "post-contents" %>
 
+
+
+
+  <%= link_to '投稿する', new_dish_path, class: "post-contents" %>
+    <i class="fas fa-pen"></i>
+    <div class="contents-show">
+      <div class="index">posts</div>
+        <br>
+        <div class= "contents-box">
+        <% @dishes.each do |dish| %> 
+          <div class ="contents">
+          <%= link_to " #{dish.user.nickname}さん", user_path(dish.user_id)%>
+            <ul>
+              <li class="contents-list"><%= dish.dish_1%></li>
+              <li class="contents-list"><%= dish.dish_2%></li>
+              <li class="contents-list"><%= dish.dish_3%></li>
+              <li class="contents-list"><%= dish.dish_4%></li>
+              <li class="contents-list"><%= dish.dish_5%></li>
+            </ul>
+            </div> 
+          <% end %>  
+        <br>
+        </div> 
+      </div>   
+    </div>   
+  </body>
