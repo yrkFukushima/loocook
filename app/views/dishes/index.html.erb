@@ -45,7 +45,10 @@
         <div class= "contents-box">
         <% @dishes.each do |dish| %> 
           <div class ="contents">
+          <div class="user-name">
           <%= link_to " #{dish.user.nickname}さん", user_path(dish.user_id)%>
+          <div class="time"><%= l dish.user.created_at%></div>
+            </div>
             <ul>
               <li class="contents-list"><%= dish.dish_1%></li>
               <li class="contents-list"><%= dish.dish_2%></li>

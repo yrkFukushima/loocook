@@ -1,15 +1,31 @@
-<%= form_with(model: @dish, local: true) do |f| %>
-
-<div> 料理名</div>
-<%= f.text_field :dish_1, class:"dish_1"%>
-<div> 料理名</div>
-<%= f.text_field :dish_2, class:"dish_2"%>
-<div> 料理名</div>
-<%= f.text_field :dish_3, class:"dish_3"%>
-<div> 料理名</div>
-<%= f.text_field :dish_4, class:"dish_4"%>
-<div> 料理名</div>
-<%= f.text_field :dish_5, class:"dish_5"%>
-<div> 料理名</div>
-<%= f.submit "投稿する", class:"submit-btn"%>
-<%end%>
+<header>
+    <div class="head-contents">
+      <div class="left-content">
+        <h1 class="header-logo">Loocook</h1>
+      </div>
+      
+      </div>
+  </header>
+<body>  
+<div class="post-form">
+<div class="form">
+  <div class="container"> 
+  <div class="head">
+      <h2>new post</h2>
+    </div>
+  <%= form_with(model: @dish, local: true) do |f| %>
+  <div class="post-contents">
+    <%= f.text_field :dish_1, class:"dish", placeholder:"今日食べたもの"%>
+    <%= f.text_field :dish_2, class:"dish",placeholder:"ex. たまご焼き"%>
+    <%= f.text_field :dish_3, class:"dish"%>
+    <%= f.text_field :dish_4, class:"dish"%>
+    <%= f.text_field :dish_5, class:"dish"%>
+    <div class="submit">
+    <%= f.submit "投稿する", class:"submit-btn"%> 
+    </div>
+          <%end%>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>  
