@@ -1,17 +1,27 @@
-<h1>マイページ</h1>
+<div class="head-contents">
+      <div class="left-content">
+        <h1 class="header-logo">Loocook</h1>
+      </div>
+      
+      </div>
+  </header>
+  <h1>マイページ</h1>
+
+
 
 <p><%="こんにちは#{@user.nickname}さん" %></p>
+<div class="mypage-contents">
 
-
-
-
-  <%= month_calendar events: @dishes do |date,dishes| %>
-    <%= date %> 
-    <% dishes.each do |dish| %> 
-      <p><%= dish.dish_1%></p>
-      <p><%= dish.dish_2%></p>
-      <p><%= dish.dish_3%></p>
-      <p><%= dish.dish_4%></p>
-      <p><%= dish.dish_5%></p>
-    <% end %>  
-  <% end %>
+  <div class="user-calender">
+    <%= month_calendar events: @dishes do |date,dishes| %>
+      <%= date.day %> 
+      <% dishes.each do |dish| %> 
+        <p class="post-dish"><%= dish.dish_1%></p>
+        <p class="post-dish"><%= dish.dish_2%></p>
+        <p class="post-dish"><%= dish.dish_3%></p>
+        <p class="post-dish"><%= dish.dish_4%></p>
+        <p class="post-dish"><%= dish.dish_5%></p>
+      <% end %>  
+    <% end %>
+  </div>  
+</div>   

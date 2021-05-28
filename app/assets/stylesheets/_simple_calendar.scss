@@ -1,0 +1,62 @@
+.simple-calendar {
+  .day { 
+    
+   }
+
+  .wday-0 {
+    
+  }
+  .wday-1 {}
+  .wday-2 {}
+  .wday-3 {}
+  .wday-4 {}
+  .wday-5 {}
+  .wday-6 {}
+
+  .today {
+  
+  }
+  .past {}
+  .future {}
+
+  .start-date {}
+
+  .prev-month {}
+  .next-month { }
+  .current-month {}
+
+  .has-events {}
+
+  td{
+    border-left-color: red;
+  }
+}
+
+.user-calender{
+  width:70%;
+
+}
+
+.mypage-contents{
+
+  background-color: #00CC99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.post-dish{
+  font-size: small;
+  
+}
+
+.calendar-heading{
+  background-color: red;
+  text-align: space-between;
+}
+.calendar-title{
+  font-size: 30px;
+}
+.calendar_room{
+  background-color: blue;
+}
