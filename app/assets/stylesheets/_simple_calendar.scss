@@ -4,31 +4,52 @@
    }
 
   .wday-0 {
+    background-color: #f5f2f2;
     
   }
-  .wday-1 {}
-  .wday-2 {}
-  .wday-3 {}
-  .wday-4 {}
-  .wday-5 {}
-  .wday-6 {}
+  .wday-1 {
+    background-color: #f5f2f2;
+  
+  }
+  .wday-2 {
+    background-color: #f5f2f2;
+  }
+  .wday-3 {
+    background-color: #f5f2f2;
+  }
+  .wday-4 {
+    background-color: #f5f2f2;
+  }
+  .wday-5 {
+    background-color: #f5f2f2;
+  }
+  .wday-6 {
+    background-color: #f5f2f2;
+  }
 
   .today {
   
   }
-  .past {}
-  .future {}
+  .past {
+    background-color: #f5f2f2;
+  }
+  .future {
+    background-color: #f5f2f2;
+  }
 
   .start-date {}
 
-  .prev-month {}
+  .past.prev-month {
+    background-image:
+	  repeating-linear-gradient(-45deg,#fff, #fff 7px,transparent 0, transparent 14px);
+  }
   .next-month { }
   .current-month {}
 
   .has-events {}
 
   td{
-    border-left-color: red;
+    border-left-color: #f5f2f2;
   }
 }
 
@@ -51,7 +72,7 @@
 }
 
 .calendar-heading{
-  background-color: red;
+  background-color: #ffffff;
   text-align: space-between;
 }
 .calendar-title{
@@ -60,3 +81,4 @@
 .calendar_room{
   background-color: blue;
 }
+
