@@ -1,7 +1,7 @@
 <div class="main">
   <div class="inner">
     <div class="form__wrapper">
-      <h2 class="page-heading">Loocook</h2>
+      <%=link_to 'Loocook', "/", class:"header-logo" %>
         <%= form_with model: @user, url:user_registration_path, local: true do |f| %>
 
         <div class="field">

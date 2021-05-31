@@ -37,8 +37,7 @@
 
 
 
-  <%= link_to '投稿する', new_dish_path, class: "post-contents" %>
-    <i class="fas fa-pen"></i>
+
     <div class="contents-show">
       <div class="index">posts</div>
         <br>
@@ -62,4 +61,10 @@
         </div> 
       </div>   
     </div>   
+    <%= link_to new_dish_path, class: 'post-contents-btn' do %>
+  <span class='post-contents-text'>記録する</span>
+  <i class="fas fa-pen", size= '185x50'></i>
+     <% end %>
+
+
   </body>

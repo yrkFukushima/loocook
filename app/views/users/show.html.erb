@@ -1,16 +1,15 @@
 <div class="head-contents">
       <div class="left-content">
-        <h1 class="header-logo">Loocook</h1>
+      <%=link_to 'Loocook', "/", class:"header-logo" %>
       </div>
       
       </div>
   </header>
-  <h1>マイページ</h1>
 
 
-
-<p><%="こんにちは#{@user.nickname}さん" %></p>
 <div class="mypage-contents">
+
+<p class="user-name"><%="#{@user.nickname}" %></p>
 
   <div class="user-calender">
     <%= month_calendar events: @dishes do |date,dishes| %>

@@ -1,15 +1,17 @@
 <div class="simple-calendar">
   <div class="calendar-heading">
-    <%= link_to t('simple_calendar.previous', default: '前月'), calendar.url_for_previous_view %>
-    <span class="calendar-title"><%= t('date.month_names')[start_date.month] %> <%= "#{start_date.year}年 #{start_date.month}月" %></span>
-    <%= link_to t('simple_calendar.next', default: '翌月'), calendar.url_for_next_view %>
+    <span class="calendar-title"><% t('date.month_names')[start_date.month] %> <%= "#{start_date.year}/ #{start_date.month}" %></span>
+    <div class="header-arrow">
+    <%= link_to t('simple_calendar.previous', default: '←'), calendar.url_for_previous_view, style:"color:white;" %>
+    <%= link_to t('simple_calendar.next', default: '→'), calendar.url_for_next_view, style:"color:white;" %>
+    </div>
   </div>
 
   <table class="table table-striped">
     <thead>
       <tr>
         <% date_range.slice(0, 7).each do |day| %>
-          <th><%= t('date.abbr_day_names')[day.wday] %></th>
+          <th><%= t('date.abbr_day_names')[day.wday]%></th>
         <% end %>
       </tr>
     </thead>

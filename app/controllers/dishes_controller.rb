@@ -1,4 +1,5 @@
 class DishesController < ApplicationController
+  before_action :authenticate_user!, only: [:create, :new]
 
   def index
     @dishes= Dish.all
@@ -24,5 +25,7 @@ class DishesController < ApplicationController
 
   def dish_params
     params.require(:dish).permit(:dish_1, :dish_2, :dish_3, :dish_4, :dish_5).merge(user_id: current_user.id)
-  end  
+  end 
+  
+  
 end

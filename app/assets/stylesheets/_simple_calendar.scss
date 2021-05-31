@@ -1,56 +1,72 @@
 .simple-calendar {
   .day { 
-    
-   }
+    background-color: #FFFFFF;
+  }
 
   .wday-0 {
-    background-color: #f5f2f2;
-    
+    background-color: #FFFFFF;
   }
   .wday-1 {
-    background-color: #f5f2f2;
-  
+    background-color: #FFFFFF;
   }
   .wday-2 {
-    background-color: #f5f2f2;
+    background-color: #FFFFFF;
   }
   .wday-3 {
-    background-color: #f5f2f2;
+    background-color: #FFFFFF;
   }
   .wday-4 {
-    background-color: #f5f2f2;
+    background-color: #FFFFFF;
   }
   .wday-5 {
-    background-color: #f5f2f2;
+    background-color: #FFFFFF;
   }
   .wday-6 {
-    background-color: #f5f2f2;
+    background-color: #FFFFFF;
   }
 
   .today {
-  
+    background-color: red;
   }
   .past {
-    background-color: #f5f2f2;
+    background-color: #F9F9FA;
   }
   .future {
-    background-color: #f5f2f2;
+    background-color: #F9F9FA;
   }
 
-  .start-date {}
+  .start-date {
+    background-color:#F9F9FA;
+  }
 
   .past.prev-month {
     background-image:
+	  repeating-linear-gradient(-45deg,#F9F9FA, #F9F9FA 7px,transparent 0, transparent 14px);
+  }
+  .past.next-month {
+    background-image:
 	  repeating-linear-gradient(-45deg,#fff, #fff 7px,transparent 0, transparent 14px);
   }
-  .next-month { }
-  .current-month {}
 
+  .next-month { 
+    background-color:#F9F9FA;
+  }
+  
+
+  .future.next-month {
+    background-image:
+	  repeating-linear-gradient(-45deg,#fff, #fff 7px,transparent 0, transparent 14px);
+  }
+  .future.prev-month {
+    background-image:
+	  repeating-linear-gradient(-45deg,#fff, #fff 7px,transparent 0, transparent 14px);
+  }
   .has-events {}
 
   td{
     border-left-color: #f5f2f2;
   }
+
 }
 
 .user-calender{
@@ -62,8 +78,9 @@
 
   background-color: #00CC99;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  
 }
 
 .post-dish{
@@ -72,13 +89,50 @@
 }
 
 .calendar-heading{
-  background-color: #ffffff;
-  text-align: space-between;
+  background-color: #00CC99;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: arial black;
+  color: white;
 }
 .calendar-title{
   font-size: 30px;
 }
 .calendar_room{
-  background-color: blue;
+  
+}
+.table.table-striped{
+  background-color:  #f5f2f2;
 }
 
+
+.header-arrow{
+  margin: 0 20px;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.simple-calendar{
+  margin-bottom: 10vh;
+}
+
+
+.calendar-title{
+  margin-left: 20px;
+}
+.user-name{
+  color:white;
+  font-weight: bold;
+  // font-size: 30px;
+  font-family: Montserrat;
+  margin: 15px 0;
+}
+
+.simple-calendar .today{
+  background-color: #dddddd;
+}
+
+td.day.wday-1.today.start-date.current-month {
+  background-color: #dddddd;
+}
