@@ -217,8 +217,11 @@ a {
   position: fixed;
   padding: 15px; 
 }
-
-/* .fas.fa-pen{
-  width:120px;
-  height: 120px;
-} */
+.footer-contents{
+    height: 10vh;
+    border-top: 1px solid #dcdcdc;
+    text-align: center;
+    padding-top: 10px;
+    color:gray;
+    font-size: small;
+}
