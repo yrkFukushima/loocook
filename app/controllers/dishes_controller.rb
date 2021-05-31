@@ -21,6 +21,10 @@ class DishesController < ApplicationController
     @dishes= Dish.all
   end  
 
+  def about
+    
+  end  
+
   private
 
   def dish_params
