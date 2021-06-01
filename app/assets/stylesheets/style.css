@@ -225,3 +225,15 @@ a {
     color:gray;
     font-size: small;
 }
+
+.intro-page{
+  text-align: right;
+  padding: 0 80px;
+  color: white;
+}
+
+.intro-page a{
+  color: white;
+  
+  text-decoration: white;
+}

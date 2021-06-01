@@ -2,7 +2,7 @@ class DishesController < ApplicationController
   before_action :authenticate_user!, only: [:create, :new]
 
   def index
-    @dishes= Dish.all
+    @dishes= Dish.all.order("created_at DESC")
   end
 
   def new
