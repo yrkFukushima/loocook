@@ -234,6 +234,44 @@ a {
 
 .intro-page a{
   color: white;
-  
+
   text-decoration: white;
+}
+
+.about-contents{
+  /* width:60vw; */
+  /* display: flex; */
+  justify-content: center;
+  align-items:center;
+  /* text-align: center; */
+  line-height: 2.5;
+  background-color: #00CC99;
+  color: white;
+  padding: 50px;
+}
+
+.about-title{
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+
+}
+
+.about-text{
+  margin: 0 30px;
+  font-family: Montserrat;
+}
+.about-text p{
+  margin-top: 15px;
+}
+
+.about-signup a{
+  color: white;
+  text-align: right;
+}
+
+.about-signup{
+  text-align: right;
+  padding-right: 80px;
 }

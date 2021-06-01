@@ -1,1 +1,28 @@
-<p>test</p>
+<div class="about-contents">
+  <div class="about-title">
+    Look in × Cooking
+  </div>
+    <div class="about-text">
+    おうち時間も増えた昨今、毎日の献立を考えるのが大変ではありませんか？<br>
+    自宅で毎日料理をすることで自分のレパートリーの少なさに嫌気がさすこともあるかもしれません。<br>
+    作りたい料理が決まっていればレシピはネットで山ほど見つけられます。<br>
+    ただ、毎日ホームパティーをするわけではありません。<br>
+    気合を入れたい日、手を抜きたい日様々なのが日常です。<br>
+    お隣さんは毎日何を作っているのだろう・・<br>
+    仕事を頑張っているあの人は料理も完璧なのかな・・<br>
+    <p>
+    他の人の、毎日のごはんがのぞける。自分の食卓がちょっぴり豊かになる。<br>
+    それがloocookです。<br>
+    今日のごはんのヒントを探しにいきましょう。</p>
+    </div>
+    <% unless user_signed_in?%>
+    <div class="about-signup"><%= link_to '→使ってみる', new_user_registration_path %></div>
+    <%end%>
+</div>
+
+
+<footer>
+  <div class="footer-contents">
+  <p>© Loocook</p>
+  </div>
+</footer>
