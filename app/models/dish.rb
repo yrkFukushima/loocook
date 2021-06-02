@@ -9,7 +9,7 @@ class Dish < ApplicationRecord
 
   def self.search(search)
     if search != ""
-      Dish.where('text LIKE(?)',"%#{search}%")
+      Dish.where(['dish_1 LIKE(?) OR dish_2 LIKE(?) OR dish_3 LIKE(?) OR dish_4 LIKE(?) OR dish_5 LIKE(?)',"%#{search}%" ,"%#{search}%","%#{search}%","%#{search}%","%#{search}%"])
     else
     Dish.all
     end

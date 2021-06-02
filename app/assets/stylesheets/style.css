@@ -230,6 +230,7 @@ a {
   text-align: right;
   padding: 0 80px;
   color: white;
+  background-color: black;
 }
 
 .intro-page a{
@@ -274,4 +275,45 @@ a {
 .about-signup{
   text-align: right;
   padding-right: 80px;
+}
+.search-btn{
+  cursor: pointer;
+  border: none;
+  color: #00CC99;
+  font-size: 1.3em;
+  background-color: #ffffff;
+  position: absolute;
+  width: 2.5em;
+  right: 9px;
+}
+
+.search-btn:hover{
+  background-color: #FFFFFF;
+  color:#00a381;
+  
+}
+.search-form{
+  box-sizing: border-box;
+  position: relative;
+  border: 1px solid #999;
+  padding: 3px 10px;
+  border-radius: 20px;
+  width:260px;
+  height: 2.3em;
+}
+
+.search-input{
+  border:none;
+}
+
+.search-input:focus{
+  outline: none;
+}
+
+.show-wrapper{
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+  padding:0 60px;
+  align-items: center;
 }
