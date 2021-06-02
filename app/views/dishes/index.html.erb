@@ -44,6 +44,13 @@
     <div class="contents-show">
       <div class="index">posts</div>
         <br>
+        <%= form_with(url:search_dishes_path ,local:true, method: :get, class:"search-form") do |form|%>
+          <%= form.text_field :keyword, placeholder: "キーワード検索", class:"search-input"%>
+          <%= form.button type: 'submit',class: "search-btn" do %>
+          <i class="fas fa-search"></i>
+        <% end %>  
+        <% end %>  
+
         <div class= "contents-box">
         <% @dishes.each do |dish| %> 
           <div class ="contents">
