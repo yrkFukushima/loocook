@@ -22,7 +22,10 @@ class DishesController < ApplicationController
   end  
 
   def about
-    
+  end  
+
+  def search
+    @dishes= Dish.search(params[:keyword])
   end  
 
   private
