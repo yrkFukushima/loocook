@@ -124,7 +124,6 @@
 .user-name{
   color:white;
   font-weight: bold;
-  // font-size: 30px;
   font-family: Montserrat;
   margin: 15px 0;
 }
@@ -136,3 +135,19 @@
 td.day.wday-1.today.start-date.current-month {
   background-color: #dddddd;
 }
+
+.header-arrow{
+  height:25px;
+  width: 25px;
+}
+.header-arrow a{
+  font-size: medium;
+  font-weight: bolder;
+  margin: 0 10px;
+  border: 1px solid black;
+  border-radius: 100vh;
+}
+// .header-arrow a:hover{
+//   font-size: 20px;
+//   font-weight: 900;
+// }

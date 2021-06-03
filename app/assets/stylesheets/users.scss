@@ -19,6 +19,9 @@
   padding: 50px;
 }
 
+.form-logo{
+  text-align: center;
+}
 .page-heading{
   color:#00CC99;
   text-align: center;
@@ -43,6 +46,10 @@
   height: 4vh;
   background-color: #F8F8FF;
   border: 1px solid #DCDCDC;
+}
+
+.text_field:focus{
+  outline: none;
 }
 
 
@@ -72,3 +79,32 @@
   cursor: pointer;
 }
 
+
+.to-registration{
+  font-size: 12px;
+}
+
+.registration_btn{
+  display: inline-block;
+  justify-content: center;
+  padding: 0.4em 1.6em;
+  font-size: 0.7em;
+  color: #00CC99;
+  text-decoration: none;
+  user-select: none;
+  background:  #fff;
+  border: 1px  #00CC99 solid;
+  border-radius: 3px;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 2px 0 rgba(0, 0, 0, 0.12);
+  transition: 0.2s ease;
+  margin-top: 10px;
+}
+
+.registration_btn:hover{
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}
+
+.new-registration{
+  text-align: center;
+}

@@ -1,7 +1,9 @@
 <div class="main">
   <div class="inner">
     <div class="form__wrapper">
+    <div class="form-logo">
      <%=link_to 'Loocook', "/", class:"header-logo" %>
+     </div>
         
         <%= form_with model: @user,url: user_session_path, local: true do |f| %>
 
@@ -19,6 +21,11 @@
           <%= f.submit "ログイン", class: :form__btn %>
         </div>
       <% end %>
+      
+      <div class="to-registration">アカウントをお持ちでないですか？</div>
+      <div class="new-registration">
+      <%= link_to '新規会員登録', new_user_registration_path, class: :registration_btn  %>
+      </div>
     </div>
   </div>
 </div>

@@ -20,26 +20,19 @@
       </div>
   </header>
 
-
 <div class= "contents-body">
   <div class="introduction">
     <h1 class="introduction-title">about</h1>
     <div class="introduction-contents">
-      「今日何食べよう？」
+      「今日食べよう？」
       「いつも同じ物を作ってしまう...」<br>
       Loocookはそんな悩みを解決します。<br>
       特別な日のごはんではなくいつものごはんをのぞいてみませんか？
     </div>
-    <button class="intro-page">
+    <div class="intro-page">
       <%= link_to '→もっと詳しく', about_dishes_path, method: :get%>
     </div>
   </div>
-
-
-
-
-
-
 
     <div class="contents-show">
       <div class="show-wrapper">
@@ -56,7 +49,8 @@
         <% @dishes.each do |dish| %> 
           <div class ="contents">
           <div class="user-name">
-          <%= link_to " #{dish.user.nickname}さん", user_path(dish.user_id)%>
+          <%="#{dish.user.nickname}さん"%>
+          <%= link_to "-その他の記録", user_path(dish.user_id)%>
           <div class="time"><%= l dish.user.created_at%></div>
             </div>
             <ul>
@@ -75,10 +69,8 @@
     <%= link_to new_dish_path, class: 'post-contents-btn' do %>
   <span class='post-contents-text'>記録する</span>
   <i class="fas fa-pen", size= '185x50'></i>
-     <% end %>
-
-
-  </body>
+    <% end %>
+</body>
 
 <footer>
   <div class="footer-contents">

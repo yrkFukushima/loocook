@@ -16,7 +16,7 @@ div {
 }
 
 body {
-  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN W3", sans-serif;
+  font-family: "Meiryo", "メイリオ", sans-serif;
   
 }
 
@@ -54,6 +54,10 @@ a {
   font-size: 32px;
   color: #00CC99;
   font-weight: bold;
+  text-align: center;
+}
+.form-logo{
+  text-align: center;
 }
 
 .left-content{
@@ -67,6 +71,7 @@ a {
   align-items: center;
   margin-right: 50px;
 }
+
 
 
 .header-btn{
@@ -157,15 +162,21 @@ a {
 
 .user-name a {
   color:black;
+  font-weight: lighter;
 }
 
 .user-name{
+  display: flex;
+  justify-content: space-between;
   border-bottom: 1px solid #00CC99;
   margin-bottom: 10px;
+  color: #333333;
+  
 }
 .time{
   display: inline-block;
   color: gray;
+  font-size: 12px;
 }
 
 .contents p {
@@ -217,6 +228,10 @@ a {
   position: fixed;
   padding: 15px; 
 }
+.post-contents-btn:hover{
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}
 .footer-contents{
     height: 10vh;
     border-top: 1px solid #dcdcdc;
@@ -225,12 +240,22 @@ a {
     color:gray;
     font-size: small;
 }
+.dish:focus{
+  outline: none;
+}
 
 .intro-page{
   text-align: right;
   padding: 0 80px;
   color: white;
-  background-color: black;
+  background-color: #00CC99;
+  border-radius: 100vh;
+  border: none;
+}
+
+.intro-page a:hover{
+  color:#9900cc;
+  font-weight: bold;
 }
 
 .intro-page a{
@@ -267,12 +292,12 @@ a {
   margin-top: 15px;
 }
 
-.about-signup a{
+.about-signup a,.toppage a{
   color: white;
   text-align: right;
 }
 
-.about-signup{
+.about-signup,.toppage{
   text-align: right;
   padding-right: 80px;
 }
@@ -317,3 +342,14 @@ a {
   padding:0 60px;
   align-items: center;
 }
+
+.about-signup a:hover,.toppage a:hover{
+  color:#9900cc ;
+  font-weight: bolder;
+}
+
+.submit-btn:hover{
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}
+
