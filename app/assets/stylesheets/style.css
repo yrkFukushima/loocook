@@ -164,15 +164,20 @@ a {
   color:black;
   font-weight: lighter;
 }
+.user-name a:hover{
+  font-weight: bolder;
+
+} 
 
 .user-name{
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #00CC99;
   margin-bottom: 10px;
-  color: #333333;
-  
-}
+  color: #ffffff;
+  /* font-size: xx-large; */
+  }
+
 .time{
   display: inline-block;
   color: gray;
@@ -194,10 +199,11 @@ a {
 }
 
 .contents-list{
+  padding: 0 5px;
   position: relative;
 }
 
-.contents-list::after{
+/* .contents-list::after{
   display: block;
   content: '';
   position: absolute;
@@ -209,12 +215,16 @@ a {
   border-bottom: 1px solid #00CC99;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
+} */
+
+.lists{
+  padding: 0 10px;
 }
+
+
 
 .mypage-contents{
   background-color:#00CC99;
-  /* display: flex;
-  align-items: center; */
 }
 
 .post-contents-btn {

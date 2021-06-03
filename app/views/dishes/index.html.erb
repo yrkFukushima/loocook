@@ -49,11 +49,11 @@
         <% @dishes.each do |dish| %> 
           <div class ="contents">
           <div class="user-name">
-          <%="#{dish.user.nickname}さん"%>
-          <%= link_to "-その他の記録", user_path(dish.user_id)%>
+          <%# <%="#{dish.user.nickname}さん"%> 
+          <%= link_to "#{dish.user.nickname}", user_path(dish.user_id)%>
           <div class="time"><%= l dish.user.created_at%></div>
             </div>
-            <ul>
+            <ul class="lists">
               <li class="contents-list"><%= dish.dish_1%></li>
               <li class="contents-list"><%= dish.dish_2%></li>
               <li class="contents-list"><%= dish.dish_3%></li>
