@@ -9,7 +9,6 @@
 }
 .container {
   width:60%;
-  /* margin-top: 30px; */
   margin-right: auto;
   margin-left: auto;
   text-align:center;
@@ -25,7 +24,6 @@
   background-color: #FFFFFF;
   color:#00CC99;
   padding-bottom: 20px;
- 
 }
 
 h2 {
@@ -45,6 +43,10 @@ h2 {
   border-left: none;
 }
 
+.dish:focus{
+  outline: none;
+}
+
 .submit{
   margin-bottom: 25px;
 }
@@ -61,7 +63,9 @@ h2 {
   width:30%;
   color:#fff;
 }
-button:hover, .button:hover {
-  background:#19a08c;
+.submit-btn:hover{
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+  cursor: pointer;
 }
+
 

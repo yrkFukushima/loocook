@@ -1,0 +1,76 @@
+.header{
+  height: 40%;
+}
+.head-contents{
+  height: 60%;
+  width: 100%;
+  background-color: #FFFFFF;
+  color: #00CC99;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.header-logo{
+  font-family: Montserrat;
+  font-size: 32px;
+  color: #00CC99;
+  font-weight: bold;
+  text-align: center;
+}
+.form-logo{
+  text-align: center;
+}
+
+.left-content{
+  margin-left: 50px;
+  padding: 2vh;
+}
+
+.right-content{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 50px;
+}
+.header-btn{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 14px;
+  text-decoration: #00CC99;
+  color: #00CC99;
+}
+.login{
+  margin-left: 7px;
+  border : 1px solid #00CC99;
+  padding: 10px;
+  background-color: #FFFFFF;
+  color: #00CC99;
+}
+.login:hover{
+  background-color: #00CC99;
+  color:#FFFFFF;
+}
+
+.sign-up{
+  border : 1px solid #00CC99;
+  padding: 10px;
+  background-color: #FFFFFF;
+  color: #00CC99;
+}
+.sign-up:hover{
+  background-color: #00CC99;
+  color:#FFFFFF;
+}
+
+.logout{
+  border : 1px solid #00CC99;
+  padding: 10px;
+  background-color: #FFFFFF;
+  color: #00CC99;
+}
+.logout:hover{
+  background-color: #00CC99;
+  color:#FFFFFF;
+}

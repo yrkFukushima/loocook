@@ -1,0 +1,156 @@
+.contents-body{
+  height:100%;
+  width:100%;
+  background-size: contain;
+  background-repeat:  repeat-x; 
+  background-position:center center;          
+}
+
+.index{
+  color: #00CC99;
+  font-size: 30px;
+  font-family: Montserrat;
+}
+.contents-show{
+  margin: 0 50px 0 50px ;
+  padding: 0 50px 0 50px;
+  
+}
+.introduction{
+  height: 50vh;
+  padding: 0 50px 0 50px ;
+  background-color: #00CC99;
+  color: #FFFFFF;
+  font-family: Montserrat;
+}
+.introduction-title {
+
+  font-family: Montserrat;
+  padding-top: 50px;
+}
+.contents{
+  width: 60%;
+  padding: 20px;
+  background-color: #f5f5f5;
+  margin-bottom: 10px;
+  box-shadow: 2px 2px 4px gray;
+  
+}
+.user-name a {
+  color:black;
+  font-weight: lighter;
+}
+.user-name a:hover{
+  font-weight: bolder;
+
+} 
+
+.user-name{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #00CC99;
+  margin-bottom: 10px;
+  color: #ffffff;
+  }
+
+.time{
+    display: inline-block;
+    color: gray;
+    font-size: 12px;
+}
+.contents p {
+    margin:5px;
+}
+.contents-box{
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.contents-list{
+  padding: 0 5px;
+  position: relative;
+}
+
+
+.lists{
+  padding: 0 10px;
+}
+
+.post-contents-btn {
+  width: 120px;
+  color: white;
+  background: #00CC99;
+  text-align: center;
+  border-radius: 4%;
+  bottom: 32px;
+  right: 32px;
+  position: fixed;
+  padding: 15px; 
+}
+.post-contents-btn:hover{
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}
+.intro-page{
+  text-align: right;
+  padding: 0 80px;
+  color: white;
+  background-color: #00CC99;
+  border-radius: 100vh;
+  border: none;
+}
+
+.intro-page a:hover{
+  color:#9900cc;
+  font-weight: bold;
+}
+
+.intro-page a{
+  color: white;
+
+  text-decoration: white;
+}
+
+.search-btn{
+  cursor: pointer;
+  border: none;
+  color: #00CC99;
+  font-size: 1.3em;
+  background-color: #ffffff;
+  position: absolute;
+  width: 2.5em;
+  right: 9px;
+}
+
+.search-btn:hover{
+  background-color: #FFFFFF;
+  color:#00a381;
+  
+}
+.search-form{
+  box-sizing: border-box;
+  position: relative;
+  border: 1px solid #999;
+  padding: 3px 10px;
+  border-radius: 20px;
+  width:260px;
+  height: 2.3em;
+}
+.search-input{
+  border:none;
+}
+
+.search-input:focus{
+  outline: none;
+}
+
+.show-wrapper{
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+  padding:0 60px;
+  align-items: center;
+}

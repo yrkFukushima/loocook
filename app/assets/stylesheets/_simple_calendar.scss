@@ -2,7 +2,6 @@
   .day { 
     background-color: #FFFFFF;
   }
-
   .wday-0 {
     background-color: #FFFFFF;
   }
@@ -26,7 +25,7 @@
   }
 
   .today {
-    background-color: red;
+  
   }
   .past {
     background-color: #F9F9FA;
@@ -51,8 +50,6 @@
   .next-month { 
     background-color:#F9F9FA;
   }
-  
-
   .future.next-month {
     background-image:
 	  repeating-linear-gradient(-45deg,#fff, #fff 7px,transparent 0, transparent 14px);
@@ -66,86 +63,8 @@
   td{
     border-left-color: #f5f2f2;
   }
-
-}
-
-.user-calender{
-  width:70%;
-
-}
-
-.mypage-contents{
-
-  background-color: #00CC99;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  
-}
-
-.post-dish{
-  font-size: small;
-  
-}
-
-.calendar-heading{
-  background-color: #00CC99;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-family: arial black;
-  color: white;
-}
-.calendar-title{
-  font-size: 30px;
-}
-.calendar_room{
-  
-}
-.table.table-striped{
-  background-color:  #f5f2f2;
-}
-
-
-.header-arrow{
-  margin: 0 20px;
-  font-size: medium;
-  font-weight: bold;
-}
-
-.simple-calendar{
   margin-bottom: 10vh;
 }
 
 
-.calendar-title{
-  margin-left: 20px;
-}
-.user-name{
-  color:white;
-  font-weight: bold;
-  font-family: Montserrat;
-  margin: 15px 0;
-}
 
-
-td.day.wday-1.today.start-date.current-month {
-  background-color: #dddddd;
-}
-
-
-
-.header-arrow a{
-  font-size: 20px;
-  margin: 0 5px;
-}
-.header-arrow a:hover{
-  font-size: 30px;
-
-}
-.postuser-name{
-  color: #FFFFFF;
-  font-size: 30px;
-  font-weight: bold;
-  font-family: Montserrat;
-}

@@ -1,0 +1,55 @@
+.mypage-contents{
+  background-color:#00CC99;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.header-arrow{
+  margin: 0 20px;
+  font-size: medium;
+  font-weight: bold;
+}
+.header-arrow a{
+  font-size: 20px;
+  margin: 0 5px;
+}
+.header-arrow a:hover{
+  font-size: 30px;
+}
+.postuser-name{
+  color: #FFFFFF;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Montserrat;
+}
+.user-name{
+  color:white;
+  font-weight: bold;
+  font-family: Montserrat;
+  margin: 15px 0;
+}
+
+.post-dish{
+  font-size: small;
+}
+
+.user-calender{
+  width:70%;
+}
+.calendar-heading{
+  background-color: #00CC99;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: arial black;
+  color: white;
+}
+.calendar-title{
+  font-size: 30px;
+  margin-left: 20px;
+}
+
+.table.table-striped{
+  background-color:  #f5f2f2;
+}

@@ -1,0 +1,37 @@
+.about-contents{
+  justify-content: center;
+  align-items:center;
+  line-height: 2.5;
+  background-color: #00cc99;
+  color: white;
+  padding: 50px;
+}
+.about-title{
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+
+}
+
+.about-text{
+  margin: 0 30px;
+  font-family: Montserrat;
+}
+.about-text p{
+  margin-top: 15px;
+}
+
+.about-signup a,.toppage a{
+  color: white;
+  text-align: right;
+}
+
+.about-signup,.toppage{
+  text-align: right;
+  padding-right: 80px;
+}
+.about-signup a:hover,.toppage a:hover{
+  color:#9900cc ;
+  font-weight: bolder;
+}
