@@ -1,3 +1,4 @@
+
 .contents-body{
   height:100%;
   width:100%;
@@ -9,7 +10,7 @@
 .index{
   color: #00CC99;
   font-size: 30px;
-  font-family: Montserrat;
+  
 }
 .contents-show{
   margin: 0 50px 0 50px ;
@@ -21,11 +22,8 @@
   padding: 0 50px 0 50px ;
   background-color: #00CC99;
   color: #FFFFFF;
-  font-family: Montserrat;
 }
 .introduction-title {
-
-  font-family: Montserrat;
   padding-top: 50px;
 }
 .contents{
@@ -72,6 +70,8 @@
 .contents-list{
   padding: 0 5px;
   position: relative;
+  font-weight:lighter;
+
 }
 
 
