@@ -2,7 +2,7 @@
   <div class="about-title">
     Look in × Cooking
   </div>
-    <div class="about-text">
+  <div class="about-text">
     おうち時間も増えた昨今、毎日の献立を考えるのが大変ではありませんか？<br>
     自宅で毎日料理をすることで自分のレパートリーの少なさに嫌気がさすこともあるかもしれません。<br>
     作りたい料理が決まっていればレシピはネットで山ほど見つけられます。<br>
@@ -14,16 +14,11 @@
     他の人の、毎日のごはんがのぞける。自分の食卓がちょっぴり豊かになる。<br>
     それがloocookです。<br>
     今日のごはんのヒントを探しにいきましょう。</p>
-    </div>
+  </div>
     <% unless user_signed_in?%>
-    <div class="about-signup"><%= link_to '→使ってみる', new_user_registration_path %></div>
+      <div class="about-signup"><%= link_to '→使ってみる', new_user_registration_path %></div>
     <%end%>
-    <div class="toppage"><%= link_to '→TOPへ戻る', "/"%></div>
+      <div class="toppage"><%= link_to '→TOPへ戻る', "/"%></div>
 </div>
 
-
-<footer>
-  <div class="footer-contents">
-  <p>© Loocook</p>
-  </div>
-</footer>
+<%= render "shared/footer" %>

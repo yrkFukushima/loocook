@@ -1,16 +1,9 @@
-<div class="head-contents">
-      <div class="left-content">
-      <%=link_to 'Loocook', "/", class:"header-logo" %>
-      </div>
-      
-      </div>
-  </header>
-
+<%= render "shared/header" %>
 
 <div class="mypage-contents">
-
-<p class="postuser-name"><%="#{@user.nickname}" %></p>
-
+  <div class="postuser-name">
+    <%="#{@user.nickname}" %>
+  </div>
   <div class="user-calender">
     <%= month_calendar events: @dishes do |date,dishes| %>
       <%= date.day %> 
@@ -25,8 +18,4 @@
   </div>  
 </div>   
 
-<footer>
-  <div class="footer-contents">
-  <p>© Loocook</p>
-  </div>
-</footer>
+<%= render "shared/footer" %>

@@ -1,37 +1,27 @@
-<header>
-    <div class="head-contents">
-      <div class="left-content">
-        <%=link_to 'Loocook', "/", class:"header-logo" %>
-      </div>
+<%= render "shared/header" %>
       
-      </div>
-  </header>
-<body>  
-<div class="post-form">
-<div class="form">
-  <div class="container"> 
-  <div class="head">
-      <h2>new post</h2>
-    </div>
-  <%= form_with(model: @dish, local: true) do |f| %>
-  <div class="post-contents">
-    <%= f.text_field :dish_1, class:"dish", placeholder:"今日食べたもの"%>
-    <%= f.text_field :dish_2, class:"dish",placeholder:"ex. たまご焼き"%>
-    <%= f.text_field :dish_3, class:"dish"%>
-    <%= f.text_field :dish_4, class:"dish"%>
-    <%= f.text_field :dish_5, class:"dish"%>
-    <div class="submit">
-    <%= f.submit "投稿する", class:"submit-btn"%> 
-    </div>
-          <%end%>
+<body>
+  <div class="post-form">
+    <div class="form">
+      <div class="container"> 
+        <div class="head">
+          <h2>new post</h2>
         </div>
+          <%= form_with(model: @dish, local: true) do |f| %>
+            <div class="post-contents">
+              <%= f.text_field :dish_1, class:"dish", placeholder:"今日食べたもの"%>
+              <%= f.text_field :dish_2, class:"dish",placeholder:"ex. たまご焼き"%>
+              <%= f.text_field :dish_3, class:"dish"%>
+              <%= f.text_field :dish_4, class:"dish"%>
+              <%= f.text_field :dish_5, class:"dish"%>
+                <div class="submit">
+                  <%= f.submit "投稿する", class:"submit-btn"%> 
+                </div>
+          <%end%>
+            </div>
       </div>
     </div>
   </div>
 </body>  
 
-<footer>
-  <div class="footer-contents">
-  <p>© Loocook</p>
-  </div>
-</footer>
+<%= render "shared/footer" %>

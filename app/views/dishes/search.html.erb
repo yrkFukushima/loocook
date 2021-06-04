@@ -1,5 +1,5 @@
 <head>
-<script src="https://kit.fontawesome.com/f2014794bc.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/f2014794bc.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
@@ -9,55 +9,51 @@
       </div>
       <div class="right-content">
         <li class="header-btn">
-        <% if user_signed_in?%>
-          <ul class="logout-btn"><%=link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout"%></ul>
-        <%else%>
-          <ul class="signup-btn"><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></ul>
-          <ul class="login-btn"><%= link_to 'ログイン', new_user_session_path, class: "login" %></ul>
-        <%end%>
+          <% if user_signed_in?%>
+            <ul class="logout-btn"><%=link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout"%></ul>
+          <%else%>
+            <ul class="signup-btn"><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></ul>
+            <ul class="login-btn"><%= link_to 'ログイン', new_user_session_path, class: "login" %></ul>
+          <%end%>
         </li>
-        </div>
       </div>
+    </div>
   </header>
 
 
-<div class= "contents-body">
-  <div class="introduction">
-    <h1 class="introduction-title">about</h1>
-    <div class="introduction-contents">
-      「今日何食べよう？」
-      「いつも同じ物を作ってしまう...」<br>
-      Loocookはそんな悩みを解決します。<br>
-      特別な日のごはんではなくいつものごはんをのぞいてみませんか？
+  <div class= "contents-body">
+    <div class="introduction">
+      <h1 class="introduction-title">about</h1>
+      <div class="introduction-contents">
+        「今日何食べよう？」
+        「いつも同じ物を作ってしまう...」<br>
+        Loocookはそんな悩みを解決します。<br>
+        特別な日のごはんではなくいつものごはんをのぞいてみませんか？
+      </div>
+      <div class="intro-page">
+        <%= link_to '→もっと詳しく', about_dishes_path, method: :get%>
+      </div>
     </div>
-    <div class="intro-page">
-      <%= link_to '→もっと詳しく', about_dishes_path, method: :get%>
-    </div>
-  </div>
 
-
-
-
-
-
-
-<div class="contents-show">
-  <div class="show-wrapper">
-  <div class="index">posts</div>
-    <br>
-    <%= form_with(url:search_dishes_path ,local:true, method: :get, class:"search-form") do |form|%>
-      <%= form.text_field :keyword, placeholder: "キーワード検索", class:"search-input"%>
-      <%= form.button type: 'submit',class: "search-btn" do %>
-        <i class="fas fa-search"></i>
+    <div class="contents-show">
+      <div class="show-wrapper">
+        <div class="index">posts</div>
+        <br>
+          <%= form_with(url:search_dishes_path ,local:true, method: :get, class:"search-form") do |form|%>
+            <%= form.text_field :keyword, placeholder: "キーワード検索", class:"search-input"%>
+            <%= form.button type: 'submit',class: "search-btn" do %>
+              <i class="fas fa-search"></i>
+            <% end %>  
           <% end %>  
-      <% end %>  
-  </div>    
+      </div>    
       <div class= "contents-box">
         <% @dishes.each do |dish| %> 
           <div class ="contents">
-          <div class="user-name">
-          <%= link_to " #{dish.user.nickname}さん", user_path(dish.user_id)%>
-          <div class="time"><%= l dish.user.created_at%></div>
+            <div class="user-name">
+              <%= link_to " #{dish.user.nickname}さん", user_path(dish.user_id)%>
+              <div class="time">  
+                <%= l dish.user.created_at%>
+              </div>
             </div>
             <ul>
               <li class="contents-list"><%= dish.dish_1%></li>
@@ -66,16 +62,12 @@
               <li class="contents-list"><%= dish.dish_4%></li>
               <li class="contents-list"><%= dish.dish_5%></li>
             </ul>
-            </div> 
-          <% end %>  
+          </div> 
+        <% end %>  
         <br>
-        </div> 
+      </div> 
     </div>
-</div>
+  </div>
 </body>
 
-<footer>
-  <div class="footer-contents">
-  <p>© Loocook</p>
-  </div>
-</footer>
+<%= render "shared/footer" %>
