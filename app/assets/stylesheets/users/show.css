@@ -30,8 +30,12 @@
 
 .post-dish{
   font-size: small;
+  color: black; 
+  background:linear-gradient(transparent 20%, #fffacd 0%);
 }
-
+.post-dish p{
+  background:linear-gradient(transparent 60%, #52ccad 0%);
+}
 .user-calender{
   width:70%;
 }
