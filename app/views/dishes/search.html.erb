@@ -1,24 +1,4 @@
-<head>
-  <script src="https://kit.fontawesome.com/f2014794bc.js" crossorigin="anonymous"></script>
-</head>
-<body>
-  <header>
-    <div class="head-contents">
-      <div class="left-content">
-        <h1 class="header-logo">Loocook</h1>
-      </div>
-      <div class="right-content">
-        <li class="header-btn">
-          <% if user_signed_in?%>
-            <ul class="logout-btn"><%=link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout"%></ul>
-          <%else%>
-            <ul class="signup-btn"><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></ul>
-            <ul class="login-btn"><%= link_to 'ログイン', new_user_session_path, class: "login" %></ul>
-          <%end%>
-        </li>
-      </div>
-    </div>
-  </header>
+<%= render "shared/header" %>
 
 
   <div class= "contents-body">
@@ -52,7 +32,7 @@
             <div class="user-name">
               <%= link_to " #{dish.user.nickname}さん", user_path(dish.user_id)%>
               <div class="time">  
-                <%= l dish.user.created_at%>
+                <%= l dish.created_at, format: :long%>
               </div>
             </div>
             <ul>

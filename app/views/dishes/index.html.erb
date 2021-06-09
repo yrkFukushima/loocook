@@ -51,7 +51,7 @@
           <div class ="contents">
             <div class="user-name">
               <%= link_to "#{dish.user.nickname}", user_path(dish.user_id)%>
-                <div class="time"><%= l dish.created_at, format: :short%></div>
+                <div class="time"><%= l dish.created_at, format: :long%></div>
             </div>
               <ul class="lists">
                 <li class="contents-list"><%= dish.dish_1%></li>
