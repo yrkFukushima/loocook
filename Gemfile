@@ -62,3 +62,6 @@ gem 'pry-rails'
 
 gem "simple_calendar", "~> 2.4"
 
+group :production do
+  gem 'unicorn', '5.4.1'
+end  
