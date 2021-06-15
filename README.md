@@ -12,7 +12,7 @@
  これらを解決するために今回のアプリ開発に至った。
 
 ## URL
-https://loocook.herokuapp.com/
+http://www.loocook.net/
 
 ## テスト用アカウント
 ・ユーザー1<br>
@@ -106,4 +106,5 @@ $ rails s
 ・Ruby on Rails(6.0.3.7)<br>
 ・Ruby(2.6.5)<br>
 ・MySQL(5.6.51)<br>
-・GitHub
+・GitHub<br>
+・AWS
