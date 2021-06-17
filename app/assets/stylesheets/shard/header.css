@@ -76,13 +76,14 @@
   color:#FFFFFF;
 }
 .mypage{
-  border : 1px solid #00CC99;
+
   padding: 10px;
   background-color: #FFFFFF;
   color: #00CC99;
 }
 
 .mypage:hover{
-  background-color: #00CC99;
-  color:#FFFFFF;
+  text-decoration: underline;
+  text-decoration-color: #00CC99;
+
 }
