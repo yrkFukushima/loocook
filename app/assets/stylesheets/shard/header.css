@@ -87,3 +87,19 @@
   text-decoration-color: #00CC99;
 
 }
+
+@media screen and (max-width:480px){
+  .left-content{
+    margin-left: 15px;
+  }
+  .header-logo{
+    font-size: 25px;
+  }
+
+  .right-content{
+    margin-right: 15px;
+  }
+  .logout{
+    font-size: 12px;
+  }
+} 
