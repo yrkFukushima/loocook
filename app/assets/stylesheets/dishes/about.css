@@ -1,3 +1,5 @@
+
+
 .about-contents{
   justify-content: center;
   align-items:center;
@@ -35,3 +37,24 @@
   color:#9900cc ;
   font-weight: bolder;
 }
+
+@media screen and (max-width:480px){
+  body{
+    width: 100%;
+    padding:0;
+  }
+  .about-contents{
+    width: 100%;
+    margin: 0;
+  }
+
+  .about-title{
+    width: 100%;
+    font-size: 28px;
+  }
+.about-text{
+  margin:0;
+}
+
+
+  }
