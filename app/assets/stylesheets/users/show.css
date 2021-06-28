@@ -61,12 +61,14 @@
     width : 100%;
   }
   .post-dish{
-    font-size:9px;
+    font-size:8px;
   }
   .user-calender{
     width: 100%;
   }
-
+  .calendar-title{
+    font-size: 25px;
+  }
   .mypage-contents{
     width: 100%;
     padding: 0;
